@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      // 这一行是关键！必须和你的仓库名 wanglaoji 一致
+      base: '/wanglaoji/', 
       server: {
         port: 3000,
         host: '0.0.0.0',
